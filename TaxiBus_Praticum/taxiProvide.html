@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaxiProvide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="absolute top-0 h-fit w-full overflow-hidden bg-cover bg-fixed bg-left bg-no-repeat"
+    style="background-image: url('https://a.cdn-hotels.com/gdcs/production66/d41/07b19af0-8ab2-492e-97af-1ba8c6cac50a.jpg');">
+    <nav class="absolute left-0 top-0 w-full bg-black/10 p-4 md:px-6 lg:px-12 xl:px-24">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between font-semibold">
+          <div class="hidden text-white md:flex">
+            <div class="inline h-8 hover:border-b-2">
+              <a href="homePage.html" class="mx-4">Home</a>
+            </div>
+            <span class="text-gray-400">|</span>
+            <div class="inline h-8 hover:border-b-2">
+              <a href="#searchbox" class="mx-4">Booking</a>
+            </div>
+            <span class="text-gray-400">|</span>
+            <div class="inline h-8 hover:border-b-2">
+              <a href="taxiService.html" class="mx-4">Services</a>
+            </div>
+            <span class="text-gray-400">|</span>
+            <div class="inline h-8 hover:border-b-2">
+              <a href="userProfile.html" class="mx-4">Account</a>
+            </div>
+          </div>
+          <div class="hidden items-center space-x-5 md:flex">
+            <a href="#" class="text-white hover:text-yellow-500">
+              <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 8 19">
+                <path fill-rule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a href="#" class="text-white hover:text-yellow-500">
+              <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 21 16">
+                <path
+                  d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.323-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.332-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.326 17.326 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+              </svg>
+              <span class="sr-only">Discord community</span>
+            </a>
+            <a href="#" class="text-white hover:text-yellow-500">
+              <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 20 17">
+                <path fill-rule="evenodd"
+                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Twitter page</span>
+            </a>
+            <a href="#" class="text-white hover:text-yellow-500">
+              <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.322 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+            <a href="#" class="text-white hover:text-yellow-500">
+              <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Dribbble account</span>
+            </a>
+            <button class="rounded bg-white px-4 py-2 font-bold text-black hover:bg-yellow-500" id="login"><a
+                href="Login.html" class="text-black">Login</a></button>
+            <button class="ml-2 rounded bg-white p-2 hover:bg-yellow-500" id="search">
+              <a href="#searchSection" class="text-black">
+                <svg class="h-6 w-6" fill="Add" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-5-5M11 15c-3.5 0-6.5-3-6.5-6.5S7.5 2 11 2s6.5 3 6.5 6.5-3 6.5-6.5 6.5z"></path>
+                </svg>
+              </a>
+            </button>
+          </div>
+          <div class="flex md:hidden">
+            <button id="hamburger" type="button"
+              class="text-white hover:text-yellow-500 focus:text-yellow-500 focus:outline-Add">
+              <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex md:hidden">
+            <button class="rounded bg-white px-4 py-2 font-bold text-black hover:bg-yellow-500" id="login"><a
+                href="Login.html" class="text-black">Login</a></button>
+            <button class="ml-2 rounded bg-white p-2 hover:bg-yellow-500" id="search">
+              <a href="#searchSection" class="text-black">
+                <!-- SVG icon for search -->
+                <svg class="h-6 w-6" fill="Add" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-5-5M11 15c-3.5 0-6.5-3-6.5-6.5S7.5 2 11 2s6.5 3 6.5 6.5-3 6.5-6.5 6.5z"></path>
+                </svg>
+                <!-- End of SVG icon -->
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="fixed left-0 top-0 hidden h-full w-1/2 bg-black/50 md:hidden" id="responsiveMenu">
+      <div class="flex h-full items-center justify-center border-b border-white">
+        <div class="flex w-full flex-col items-center font-semibold text-white">
+          <a href="#" class="my-1 flex w-full justify-center rounded border py-2 hover:bg-yellow-500">Home</a>
+          <a href="#" class="my-1 flex w-full justify-center rounded border py-2 hover:bg-yellow-500">Booking</a>
+          <a href="#" class="my-1 flex w-full justify-center rounded border py-2 hover:bg-yellow-500">Services</a>
+          <a href="#" class="my-1 flex w-full justify-center rounded border py-2 hover:bg-yellow-500">Project</a>
+          <a href="#" class="my-1 flex w-full justify-center rounded border py-2 hover:bg-yellow-500">Account</a>
+          <button id="closeMenu" class="ml-2 hidden text-white hover:bg-yellow-500 hover:text-black focus:outline-Add">
+            <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var searchButton = document.getElementById('search');
+        var searchSection = document.getElementById('searchSection');
+
+        searchButton.addEventListener('click', function () {
+          searchSection.classList.toggle('hidden');
+        });
+      });
+
+      const hamburger = document.getElementById('hamburger');
+      const closeMenu = document.getElementById('closeMenu');
+      const responsiveMenu = document.getElementById('responsiveMenu');
+      const responsiveLogin = document.getElementById('responsiveLogin');
+
+      function toggleResponsive() {
+        responsiveMenu.classList.toggle('hidden');
+        closeMenu.classList.toggle('hidden');
+      }
+
+
+      hamburger.addEventListener('click', toggleResponsive);
+
+      closeMenu.addEventListener('click', toggleResponsive);
+
+      responsiveLogin.addEventListener('click', function () {
+        responsiveMenu.classList.add('hidden');
+        closeMenu.classList.add('hidden');
+      });
+
+
+      document.addEventListener('click', function (event) {
+        if (!responsiveMenu.contains(event.target) && event.target !== hamburger) {
+          responsiveMenu.classList.add('hidden');
+          closeMenu.classList.add('hidden');
+        }
+      });
+    </script>
+    <!-- Search Section -->
+    <div id="searchSection" class="mt-20 relative hidden">
+      <div class=" relative">
+        <div class="relative bg-black bg-opacity-40">
+          <div
+            class="mx-auto flex flex-col items-center justify-center space-y-4 p-4 md:flex-row md:space-x-20 md:space-y-0">
+            <div class="relative w-full rounded-lg text-white">
+              <div class="justify-left my-2 ml-4 flex items-center">
+                <p class="font-bold">Search your taxi/Bus</p>
+              </div>
+
+              <div class="m-4">
+                <input type="text"
+                  class="h-10 w-full rounded-lg p-2 text-lg font-bold text-black focus:bg-white focus:outline-Add"
+                  placeholder="Taxi/Bus Name" />
+              </div>
+              <div class="flex flex-col items-center justify-center space-x-2 md:flex-row">
+                <div class="my-4 flex items-center">
+                  <div
+                    class="flex h-10 items-center space-x-2 rounded-l-lg border-r-2 border-black bg-white p-2 md:w-56">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FAB005/navigation.png"
+                      alt="navigation" />
+                    <p class="font-medium text-black">Direction</p>
+                  </div>
+                  <div>
+                    <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
+                      data-dropdown-trigger="hover"
+                      class="inline-flex items-center rounded-r-lg bg-white px-5 py-2.5 text-center text-sm font-medium text-black focus:outline-Add md:rounded-r-lg"
+                      type="button">
+                      Provice/City
+                      <svg class="h-2.5 w-2.5 md:ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="Add"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="m1 1 4 4 4-4" />
+                      </svg>
+                    </button>
+                    <!--  -->
+                    <div id="dropdownDelay"
+                      class="z-10 hidden divide-y divide-gray-100 rounded-lg bg-white shadow md:w-44 dark:bg-gray-700">
+                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+                        <li>
+                          <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Phnom
+                            Penh</a>
+                        </li>
+                        <li>
+                          <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Rattanakkiri</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 flex items-center justify-center">
+                  <div
+                    class="flex h-10 w-32 items-center space-x-2 rounded-l-lg border-r-2 border-black bg-white p-2 md:mt-0 md:w-56">
+                    <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios/50/FAB005/calendar--v1.png"
+                        alt="calendar--v1" /></a>
+                    <p class="font-medium text-black">Date</p>
+                  </div>
+                  <div>
+                    <div class="relative" id="timepicker-inline-12" data-te-input-wrapper-init>
+                      <input type="text"
+                        class="peer-focus:text-primary dark:peer-focus:text-primary peer block h-10 w-full rounded-r-lg border-0 bg-white px-3 py-[0.32rem] leading-[1.6] text-black outline-Add transition-all duration-200 ease-linear placeholder:text-gray-700 focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-Add [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                        id="form2" />
+                      <label for="form2"
+                        class="peer-focus:text-primary dark:peer-focus:text-primary pointer-events-Add absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] font-medium leading-[1.6] text-black transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-Add">Select
+                        a time</label>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <a href="#"><button
+                      class="mt-4 flex h-10 w-28 items-center justify-center rounded-lg bg-gradient-to-r from-yellow-500 to-amber-200 font-medium text-black md:mt-0 md:w-28">Search</button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex h-full items-center justify-center">
+              <div class="relative w-48 rounded-lg p-4 text-white">
+                <div class="items-left flex flex-col font-medium">
+                  <div class="mb-4 flex items-center">
+                    <input id="default-checkbox" type="checkbox" value=""
+                      class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                    <label for="default-checkbox"
+                      class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default checkbox</label>
+                  </div>
+                  <div class="mb-4 flex items-center">
+                    <input id="default-checkbox" type="checkbox" value=""
+                      class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                    <label for="default-checkbox"
+                      class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default checkbox</label>
+                  </div>
+                  <div class="mb-4 flex items-center">
+                    <input id="default-checkbox" type="checkbox" value=""
+                      class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                    <label for="default-checkbox"
+                      class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default checkbox</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex h-full items-center justify-center">
+              <div class="relative w-48 rounded-lg p-4 text-white">
+                <div class="items-left flex flex-col font-medium">
+                  <div class="mb-4 flex items-center">
+                    <input id="default-checkbox" type="checkbox" value=""
+                      class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                    <label for="default-checkbox"
+                      class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default checkbox</label>
+                  </div>
+                  <div class="mb-4 flex items-center">
+                    <input id="default-checkbox" type="checkbox" value=""
+                      class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                    <label for="default-checkbox"
+                      class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default checkbox</label>
+                  </div>
+                  <div class="mb-4 flex items-center">
+                    <input id="default-checkbox" type="checkbox" value=""
+                      class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                    <label for="default-checkbox"
+                      class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default checkbox</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-96 flex flex-col items-center justify-center">
+      <p class=" font-bold text-lg text-white">Taxi or Bus</p>
+    </div>
+    <div class="relative">
+      <div class="relative bg-black bg-opacity-50 py-24">
+        <div class="mx-auto flex flex-col justify-center space-y-4 p-4 md:flex-row md:space-x-5 md:space-y-0">
+          <div class="relative rounded-lg bg-white">
+            <div
+              class="flex bg-slate-600 h-auto w-full items-center justify-center rounded-t-lg bg-slate-fw-full0 object-cover text-center align-middle font-medium text-slate-300">
+              <img class="w-100 h-100" src="data:image/jpeg;base64,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" alt="taxi" />
+            </div>
+            <div class="top-fw-full m-4 text-xl font-bold text-black ">
+              <input type="text" placeholder="Your Name"
+                class="w-48 bg-slate-fw-full0 hover:border-b-2 focus:bg-Add focus:outline-Add" />
+            </div>
+            <div class="m-4 border-b-2 border-zinc-400 pb-12">
+              <div class="ml-0.5 flex items-center">
+                <img width="28" height="24" src="https://img.icons8.com/windows/32/FAB005/gender-neutral-user.png"
+                  alt="gender-neutral-user" />
+                <input type="text" placeholder="Taxi or Bus Driver"
+                  class="ml-2 font-medium hover:border-b-2 focus:bg-Add focus:outline-Add" />
+              </div>
+              <div class="ml-1 flex items-center">
+                <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/FAB005/home--v2.png"
+                  alt="home--v2" />
+                <input type="text" placeholder="Address"
+                  class="ml-3 font-medium hover:border-b-2 focus:bg-Add focus:outline-Add" />
+              </div>
+              <div class="ml-1 flex items-center">
+                <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/FAB005/iphone.png"
+                  alt="iphone" />
+                <input type="text" placeholder="Phone number"
+                  class="ml-3 font-medium hover:border-b-2 focus:bg-Add focus:outline-Add" />
+              </div>
+            </div>
+
+            <div class="m-4 border-b-2 border-zinc-400 pb-12">
+              <div class="ml-1 flex items-center">
+                <img width="24" height="24"
+                  src="https://img.icons8.com/material-outlined/24/FAB005/signpost-tourist.png"
+                  alt="signpost-tourist" />
+                <p class="ml-4 text-xl font-medium text-zinc-fw-full0">Direction</p>
+              </div>
+              <input type="text" placeholder="From ... to ..."
+                class="ml-11 font-medium hover:border-b-2 focus:bg-Add focus:outline-Add" />
+              <div class="ml-1 flex items-center">
+                <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/FAB005/clock.png"
+                  alt="clock" />
+                <p class="ml-4 text-xl font-medium text-zinc-fw-full0">Departure time</p>
+              </div>
+              <div>
+                <div>
+                  <input type="text" placeholder="From .. to ... : time AM/PM"
+                    class="ml-11 font-medium hover:border-b-2 focus:bg-Add focus:outline-Add" />
+                </div>
+                <div>
+                  <input type="text" placeholder="From .. to ... : time AM/PM"
+                    class="ml-11 font-medium hover:border-b-2 focus:bg-Add focus:outline-Add" />
+                </div>
+              </div>
+            </div>
+            <div class="m-2 flex items-center justify-center">
+              <a href="Feedback.html">
+                <button class=" font-medium hover:text-yellow-300">View Feedback</button></a>
+            </div>
+            <div class="m-8 flex items-center justify-center">
+              <button class="h-10 w-32 rounded-xl border-2 border-zinc-fw-full0 hover:bg-yellow-300">
+                <p class="text-lg font-bold text-yellow-400 hover:text-white">Edit</p>
+              </button>
+            </div>
+          </div>
+
+          <div class="relative w-full sm:w-1/2 rounded-lg bg-white">
+            <div class="m-4 pb-12">
+              <div class="ml-0.5 flex items-center">
+                <p class="ml-2 text-xl font-bold text-zinc-fw-full0">Taxi provide profile</p>
+              </div>
+              <div class="my-6 ml-1 flex">
+                <div
+                  class="flex h-auto w-2/4 items-center justify-center object-cover rounded-lg bg-slate-200 border-2 text-xl font-medium">
+                  <img class="border border-gray-600"
+                    src="data:image/jpeg;base64,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">
+
+                </div>
+                <div class="ml-4 flex flex-col">
+                  <input type="text"
+                    class="mb-4 h-10 w-full rounded-lg border-2 border-slate-400 bg-slate-200 px-2 text-center font-medium text-black hover:border-blue-600 focus:bg-Add focus:outline-Add"
+                    placeholder=" Add info" />
+                  <input type="text"
+                    class="mb-4 h-10 w-full rounded-lg border-2 border-slate-400 bg-slate-200 px-2 text-center font-medium text-black hover:border-blue-600 focus:bg-Add focus:outline-Add"
+                    placeholder=" Add info" />
+                  <input type="text"
+                    class="mb-4 h-10 w-full rounded-lg border-2 border-slate-400 bg-slate-200 px-2 text-center font-medium text-black hover:border-blue-600 focus:bg-Add focus:outline-Add"
+                    placeholder=" Add info" />
+                  <input type="text"
+                    class="mb-4 h-10 w-full rounded-lg border-2 border-slate-400 bg-slate-200 px-2 text-center font-medium text-black hover:border-blue-600 focus:bg-Add focus:outline-Add"
+                    placeholder=" Add info" />
+                </div>
+              </div>
+              <table id="Booking" class=" bg-white w-full table-fixed text-sm shadow-md rounded-lg overflow-hidden">
+                <colgroup>
+                  <col style="width: 20%;" /> <!-- Adjust the width as needed -->
+                  <col style="width: 20%;" /> <!-- Adjust the width as needed -->
+                  <col style="width: 20%;" /> <!-- Adjust the width as needed -->
+                  <col style="width: 20%;" /> <!-- Adjust the width as needed -->
+                  <col style="width: 20%;" /> <!-- Adjust the width as needed -->
+                </colgroup>
+                <thead class="text-left" id="table-header">
+                  <tr class="text-slate-700">
+                    <th class="p-3 cursor-pointer bg-blue-900 text-white"
+                      onclick="toggleTableVisibility('Scheduled', this)">Scheduled</th>
+                    <th class="p-3 cursor-pointer " onclick="toggleTableVisibility('Route', this)">Route</th>
+                    <th class="p-3 cursor-pointer " onclick="toggleTableVisibility('Vehicles', this)">Vehicles</th>
+                    <th class="p-3 cursor-pointer " onclick="toggleTableVisibility('Price', this)">Price</th>
+                    <th class="p-3 cursor-pointer " onclick="toggleTableVisibility('BookingTB', this)">Booking</th>
+                  </tr>
+                </thead>
+
+
+                <tbody class="divide-y divide-gray-200 active" id="Scheduled">
+                  <tr class="bg-blue-900 text-white ">
+                    <th class="p-3">ID</th>
+                    <th class="p-3" colspan="2">Flee</th>
+                    <th class="p-3" colspan="2">Arrive</th>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="p-3">1</td>
+                    <td class="p-3" colspan="2">Phnom Penh</td>
+                    <td class="p-3" colspan="2">Siem Reap</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="p-3">2</td>
+                    <td class="p-3" colspan="2">Phnom Penh</td>
+                    <td class="p-3" colspan="2">Svay Rieng</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="p-3">3</td>
+                    <td class="p-3" colspan="2">Phnom Penh</td>
+                    <td class="p-3" colspan="2">Khos kong</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="p-3">4</td>
+                    <td class="p-3" colspan="2">Phnom Penh</td>
+                    <td class="p-3" colspan="2">Prey Verng</td>
+                  </tr>
+                </tbody>
+
+                <tbody class=" divide-y divide-gray-200  hidden" id="BookingTB">
+                  <tr class="bg-blue-900 text-white font-medium text-center">
+                    <td class="p-3">Username</td>
+                    <td class="p-3">Time</td>
+                    <td class="p-3" colspan="2">Direction</td>
+                    <td class="p-3">Request</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="p-3"><a class="underline text-blue-600 bold" href="bookingRequest.html">Kola</a></td>
+                    <td class="p-3">Jan - 10 Mon 08:00 AM</td>
+                    <td class="p-3" colspan="2">Svay Rieng - Phnom Penh</td>
+                    <td class="p-3 font-bold "><Button class="text-red-600 mr-6">Decline</Button><Button
+                        class="text-green-600">Accept</Button></td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="p-3"><a class="underline text-blue-600 bold" href="bookingRequest.html">Kola</a></td>
+                    <td class="p-3">Jan - 10 Mon 08:00 AM</td>
+                    <td class="p-3" colspan="2">Svay Rieng - Phnom Penh</td>
+                    <td class="p-3 font-bold "><Button class="text-red-600 mr-6">Decline</Button><Button
+                        class="text-green-600">Accept</Button></td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="p-3"><a class="underline text-blue-600 bold" href="bookingRequest.html">Kola</a></td>
+                    <td class="p-3">Jan - 10 Mon 08:00 AM</td>
+                    <td class="p-3" colspan="2">Svay Rieng - Phnom Penh</td>
+                    <td class="p-3 font-bold "><Button class="text-red-600 mr-6">Decline</Button><Button
+                        class="text-green-600">Accept</Button></td>
+                  </tr>
+
+
+                </tbody>
+
+                <tbody class=" divide-y divide-gray-200 hidden" id="Route">
+                  <tr class="bg-blue-900 text-white">
+                    <th class="p-3">Time</th>
+                    <th class="p-3" colspan="2">Location</th>
+                    <th class="p-3" colspan="2">Direction</th>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="p-3">08:00 AM</td>
+                    <td class="p-3" colspan="2">Pnom Penh</td>
+                    <td class="p-3" colspan="2">Svay Rieng</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="p-3">01:00 PM</td>
+                    <td class="p-3" colspan="2">Svay Rieng</td>
+                    <td class="p-3" colspan="2">Phnom Penh</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="p-3">08:00 AM</td>
+                    <td class="p-3" colspan="2">Svay Rieng</td>
+                    <td class="p-3" colspan="2">Bavet</td>
+                  </tr>
+                </tbody>
+
+                <tbody class=" divide-y divide-gray-200 hidden" id="Vehicles">
+
+                  <tr class="bg-blue-900 text-white">
+                    <th class="p-3" colspan="3">Vehicle</th>
+                    <th class="p-3" colspan="1">Seat</th>
+                    <th class="p-3" colspan="1">Type</th>
+                  </tr>
+                  <tr>
+
+
+                  </tr>
+
+                </tbody>
+
+                <tbody class=" divide-y divide-gray-200 hidden" id="Price">
+                  <tr class="bg-blue-900 text-white">
+                    <th class="p-3">Time</th>
+                    <th class="p-3" colspan="2">Direction</th>
+                    <th class="p-3" colspan="2">Price</th>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="p-3">08:00 AM</td>
+                    <td class="p-3" colspan="2">Svay Rieng</td>
+                    <td class="p-3" colspan="2">$6</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="p-3">08:00 AM</td>
+                    <td class="p-3" colspan="2">Svay Rieng</td>
+                    <td class="p-3" colspan="2">$6</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="p-3">08:00 AM</td>
+                    <td class="p-3" colspan="2">Svay Rieng</td>
+                    <td class="p-3" colspan="2">$6</td>
+                  </tr>
+                </tbody>
+                <script>
+                  function toggleTableVisibility(tableId, clickedElement) {
+                    var tbodyElements = document.querySelectorAll('tbody');
+                    tbodyElements.forEach(function (tbody) {
+                      tbody.classList.add('hidden');
+                      tbody.classList.remove('active');
+                    });
+
+                    var selectedTable = document.getElementById(tableId);
+                    selectedTable.classList.remove('hidden');
+                    selectedTable.classList.add('active');
+
+                    // Remove "active" class from all headers
+                    var headerElements = document.querySelectorAll('#table-header th');
+                    headerElements.forEach(function (header) {
+                      header.classList.remove('bg-blue-900', 'text-white');
+                    });
+
+                    // Add "active" class to the clicked header
+                    clickedElement.classList.add('bg-blue-900', 'text-white');
+                  }
+                </script>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative">
+      <div class="h-20 w-full bg-sky-950"></div>
+      <div class="relative bg-sky-800">
+        <div class="mx-auto flex flex-col justify-center space-y-4 p-4 md:flex-row md:space-x-20 md:space-y-0">
+          <div class="relative -mt-24 rounded-lg bg-sky-900 text-white">
+            <div class="my-2 flex h-20 items-center justify-center">
+              <p class="text-4xl font-bold">TaxiBus Service</p>
+            </div>
+
+            <div class="m-4 pb-12">
+              <div>
+                <p>
+                  Laverage agile framworks to provide a <br />
+                  robust synopsis for strategy collaborative <br />
+                  thinking for further the overall value <br />
+                  proposition.
+                </p>
+              </div>
+              <div class="my-2 flex">
+                <img width="48" height="48" src="https://img.icons8.com/color/48/circled-envelope.png"
+                  alt="circled-envelope" />
+                <div class="ml-2">
+                  <p class="font-bold">Email</p>
+                  <p>TaxiBus777@gmial.com</p>
+                </div>
+              </div>
+              <div class="my-2 flex">
+                <img width="48" height="48" src="https://img.icons8.com/ios-filled/50/228BE6/apple-phone.png"
+                  alt="apple-phone" />
+                <div class="ml-2">
+                  <p class="font-bold">Call Us</p>
+                  <p>010 23 1010 / 079 643 5050</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center">
+            <div class="flex h-full items-center justify-center">
+              <div class="relative w-48 rounded-lg bg-sky-800 p-4 text-white">
+                <div class="items-left flex flex-col space-y-4 font-medium">
+                  <p><a href="#" class="hover:border-b-2">About Us</a></p>
+                  <p><a href="#" class="hover:border-b-2">Our Team</a></p>
+                  <p><a href="#" class="hover:border-b-2">Our Project</a></p>
+                  <p><a href="#" class="hover:border-b-2">Pricing</a></p>
+                  <p><a href="#" class="hover:border-b-2">Contact</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex h-full items-center justify-center">
+              <div class="relative w-48 rounded-lg bg-sky-800 p-4 text-white">
+                <div class="items-left flex flex-col space-y-4 font-medium">
+                  <p><a href="#" class="hover:border-b-2">Style Guide</a></p>
+                  <p><a href="#" class="hover:border-b-2">Changelog</a></p>
+                  <p><a href="#" class="hover:border-b-2">License</a></p>
+                  <p><a href="#" class="hover:border-b-2">Protected</a></p>
+                  <p><a href="#" class="hover:border-b-2">Not Found</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

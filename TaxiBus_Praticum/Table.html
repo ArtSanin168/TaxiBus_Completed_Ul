@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-indigo-400">
+
+    <div id="bookingTableContainer" class="flex items-center justify-center min-h-screen">
+        <table id="Booking" class="bg-white w-3/4 table-fixed text-sm shadow-md rounded-lg overflow-hidden">
+            <colgroup>
+                <col style="width: 20%;" /> <!-- Adjust the width as needed -->
+                <col style="width: 20%;" /> <!-- Adjust the width as needed -->
+                <col style="width: 20%;" /> <!-- Adjust the width as needed -->
+                <col style="width: 20%;" /> <!-- Adjust the width as needed -->
+                <col style="width: 20%;" /> <!-- Adjust the width as needed -->
+            </colgroup>
+            <thead class="text-left" id="table-header">
+                <tr class="text-slate-600">
+                    <th class="p-3 cursor-pointer " onclick="toggleTableVisibility('Scheduled', this)">Scheduled</th>
+                    <th class="p-3 cursor-pointer " onclick="toggleTableVisibility('Route', this)">Route</th>
+                    <th class="p-3 cursor-pointer " onclick="toggleTableVisibility('Vehicles', this)">Vehicles</th>
+                    <th class="p-3 cursor-pointer " onclick="toggleTableVisibility('Price', this)">Price</th>
+                    <th class="p-3 cursor-pointer " onclick="toggleTableVisibility('BookingTB', this)">Booking</th>
+                </tr>
+            </thead>
+
+            <tbody class="w-full divide-y divide-gray-200 active" id="Scheduled" >
+                <tr class="bg-blue-900 text-white ">
+                    <th class="p-3">ID</th>
+                    <th class="p-3" colspan="2">Flee</th>
+                    <th class="p-3" colspan="2">Arrive</th>
+                </tr>
+                <tr>
+                    <td class="p-3">None</td>
+                </tr>
+            </tbody>
+            
+            <tbody class="w-full divide-y divide-gray-200  hidden" id="BookingTB">
+                <tr class="bg-blue-900 text-white">
+                    <td class="p-3">Username</td>
+                    <td class="p-3">Time</td>
+                    <td class="p-3" colspan="2">Direction</td>
+                    <td class="p-3">Request</td>
+                </tr>
+                <tr>
+                    <td class="p-3">None</td>
+                </tr>
+            </tbody>
+
+            <tbody class="w-1/2 divide-y divide-gray-200 hidden" id="Route">
+                <tr class="bg-blue-900 text-white">
+                    <th class="p-3">Time</th>
+                    <th class="p-3" colspan="2">Location</th>
+                    <th class="p-3" colspan="2">Direction</th>
+                </tr>
+                <tr>
+                    <td class="p-3">None</td>
+                </tr>
+            </tbody>
+
+            <tbody class="w-full divide-y divide-gray-200 hidden" id="Vehicles">
+                <tr class="bg-blue-900 text-white">
+                    <th class="p-3" colspan="3">Vehicle</th>
+                    <th class="p-3" colspan="1">Seat</th>
+                    <th class="p-3" colspan="1">Type</th>
+                </tr>
+                <tr>
+                    <td class="p-3">None</td>
+                </tr>
+            </tbody>
+
+            <tbody class="w-full divide-y divide-gray-200 hidden" id="Price">
+                <tr class="bg-blue-900 text-white">
+                    <th class="p-3">Time</th>
+                    <th class="p-3" colspan="2">Direction</th>
+                    <th class="p-3" colspan="2">Price</th>
+                </tr>
+                <tr>
+                    <td class="p-3">None</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <script>
+        function toggleTableVisibility(tableId, clickedElement) {
+            var tbodyElements = document.querySelectorAll('tbody');
+            tbodyElements.forEach(function(tbody) {
+                tbody.classList.add('hidden');
+                tbody.classList.remove('active');
+            });
+    
+            var selectedTable = document.getElementById(tableId);
+            selectedTable.classList.remove('hidden');
+            selectedTable.classList.add('active');
+    
+            // Remove "active" class from all headers
+            var headerElements = document.querySelectorAll('#table-header th');
+            headerElements.forEach(function(header) {
+                header.classList.remove('bg-blue-900', 'text-white');
+            });
+    
+            // Add "active" class to the clicked header
+            clickedElement.classList.add('bg-blue-900', 'text-white');
+        }
+    </script>
+    
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="absolute top-0 h-fit w-full overflow-hidden bg-cover bg-fixed bg-left bg-no-repeat" style="background-image: url('https://a.cdn-hotels.com/gdcs/production66/d41/07b19af0-8ab2-492e-97af-1ba8c6cac50a.jpg');">
+      <nav class="absolute left-0 top-0 w-full bg-black/10 p-4 md:px-6 lg:px-12 xl:px-24">
+        <div class="container mx-auto">
+          <div class="flex items-center justify-between font-semibold">
+            <div class="hidden text-white md:flex">
+              <div class="inline h-8 hover:border-b-2">
+                <a href="homePage.html" class="mx-4">Home</a>
+              </div>
+              <span class="text-gray-400">|</span>
+              <div class="inline h-8 hover:border-b-2">
+                <a href="TaxiService.html" class="mx-4">Booking</a>
+              </div>
+              <span class="text-gray-400">|</span>
+              <div class="inline h-8 hover:border-b-2">
+                <a href="taxiService.html" class="mx-4">Services</a>
+              </div>
+              <span class="text-gray-400">|</span>
+              <div class="inline h-8 hover:border-b-2">
+                <a href="userProfile.html" class="mx-4">Account</a>
+              </div>
+            </div>
+            <div class="hidden items-center space-x-5 md:flex">
+              <a href="#" class="text-white hover:text-yellow-500">
+                <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                  <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd" />
+                </svg>
+                <span class="sr-only">Facebook page</span>
+              </a>
+              <a href="#" class="text-white hover:text-yellow-500">
+                <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                  <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.323-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.332-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.326 17.326 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                </svg>
+                <span class="sr-only">Discord community</span>
+              </a>
+              <a href="#" class="text-white hover:text-yellow-500">
+                <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                  <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd" />
+                </svg>
+                <span class="sr-only">Twitter page</span>
+              </a>
+              <a href="#" class="text-white hover:text-yellow-500">
+                <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.322 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
+                </svg>
+                <span class="sr-only">GitHub account</span>
+              </a>
+              <a href="#" class="text-white hover:text-yellow-500">
+                <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd" />
+                </svg>
+                <span class="sr-only">Dribbble account</span>
+              </a>
+              <button class="rounded bg-white px-4 py-2 font-bold text-black hover:bg-yellow-500" id="login"><a href="Login.html" class="text-black">Login</a></button>
+              <button class="ml-2 rounded bg-white p-2 hover:bg-yellow-500" id="search">
+                <a href="#searchSection" class="text-black">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-5-5M11 15c-3.5 0-6.5-3-6.5-6.5S7.5 2 11 2s6.5 3 6.5 6.5-3 6.5-6.5 6.5z"></path>
+                    </svg>
+                </a>
+            </button>
+            </div>
+            <div class="flex md:hidden">
+              <button id="hamburger" type="button" class="text-white hover:text-yellow-500 focus:text-yellow-500 focus:outline-none">
+                <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="flex md:hidden">
+              <button class="rounded bg-white px-4 py-2 font-bold text-black hover:bg-yellow-500" id="login"><a href="Login.html" class="text-black">Login</a></button>
+              <button class="ml-2 rounded bg-white p-2 hover:bg-yellow-500" id="search">
+                <a href="#searchSection" class="text-black">
+                    <!-- SVG icon for search -->
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-5-5M11 15c-3.5 0-6.5-3-6.5-6.5S7.5 2 11 2s6.5 3 6.5 6.5-3 6.5-6.5 6.5z"></path>
+                    </svg>
+                    <!-- End of SVG icon -->
+                </a>
+            </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="fixed left-0 top-0 hidden h-full w-1/2 bg-black/50 md:hidden" id="responsiveMenu">
+        <div class="flex h-full items-center justify-center border-b border-white">
+          <div class="flex w-full flex-col items-center font-semibold text-white">
+            <a href="#" class="my-1 flex w-full justify-center rounded border py-2 hover:bg-yellow-500">Home</a>
+            <a href="#" class="my-1 flex w-full justify-center rounded border py-2 hover:bg-yellow-500">Booking</a>
+            <a href="#" class="my-1 flex w-full justify-center rounded border py-2 hover:bg-yellow-500">Services</a>
+            <a href="#" class="my-1 flex w-full justify-center rounded border py-2 hover:bg-yellow-500">Project</a>
+            <a href="#" class="my-1 flex w-full justify-center rounded border py-2 hover:bg-yellow-500">Account</a>
+            <button id="closeMenu" class="ml-2 hidden text-white hover:bg-yellow-500 hover:text-black focus:outline-none">
+              <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12Z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+    var searchButton = document.getElementById('search');
+    var searchSection = document.getElementById('searchSection');
+
+    searchButton.addEventListener('click', function () {
+      searchSection.classList.toggle('hidden');
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var searchButton = document.getElementById('searchBook');
+    var searchSection = document.getElementById('searchSection');
+
+    searchButton.addEventListener('click', function () {
+      searchSection.classList.toggle('hidden');
+    });
+  });
+
+
+        const hamburger = document.getElementById('hamburger');
+        const closeMenu = document.getElementById('closeMenu');
+        const responsiveMenu = document.getElementById('responsiveMenu');
+        const responsiveLogin = document.getElementById('responsiveLogin');
+
+        function toggleResponsive() {
+            responsiveMenu.classList.toggle('hidden');
+            closeMenu.classList.toggle('hidden');
+        }
+
+
+        hamburger.addEventListener('click', toggleResponsive);
+
+        closeMenu.addEventListener('click', toggleResponsive);
+
+        responsiveLogin.addEventListener('click', function () {
+            responsiveMenu.classList.add('hidden');
+            closeMenu.classList.add('hidden');
+        });
+
+
+        document.addEventListener('click', function (event) {
+            if (!responsiveMenu.contains(event.target) && event.target !== hamburger) {
+                responsiveMenu.classList.add('hidden');
+                closeMenu.classList.add('hidden');
+            }
+        });
+      </script>
+            <!-- Search Section -->
+      
+      <div id="searchSection" class="mt-20 relative h-20 hidden">
+        <div class=" relative">
+        <div class="relative bg-black bg-opacity-40">
+          <div class="mx-auto flex flex-col items-center justify-center space-y-4 p-4 md:flex-row md:space-x-20 md:space-y-0">
+            <div class="relative w-full rounded-lg text-white">
+              <div class="justify-left my-2 ml-4 flex items-center">
+                <p class="font-bold">Search your taxi/Bus</p>
+              </div>
+
+              <div class="m-4">
+                <input type="text" class="h-10 w-full rounded-lg p-2 text-lg font-bold text-black focus:bg-white focus:outline-none" placeholder="Taxi/Bus Name" />
+              </div>
+              <div class="flex flex-col items-center justify-center space-x-2 md:flex-row">
+                <div class="my-4 flex items-center">
+                  <div class="flex h-10 items-center space-x-2 rounded-l-lg border-r-2 border-black bg-white p-2 md:w-56">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FAB005/navigation.png" alt="navigation" />
+                    <p class="font-medium text-black">Direction</p>
+                  </div>
+                  <div>
+                    <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="inline-flex items-center rounded-r-lg bg-white px-5 py-2.5 text-center text-sm font-medium text-black focus:outline-none md:rounded-r-lg" type="button">
+                      Provice/City
+                      <svg class="h-2.5 w-2.5 md:ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                      </svg>
+                    </button>
+                    <!--  -->
+                    <div id="dropdownDelay" class="z-10 hidden divide-y divide-gray-100 rounded-lg bg-white shadow md:w-44 dark:bg-gray-700">
+                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Phnom Penh</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Rattanakkiri</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 flex items-center justify-center">
+                  <div class="flex h-10 w-32 items-center space-x-2 rounded-l-lg border-r-2 border-black bg-white p-2 md:mt-0 md:w-56">
+                    <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios/50/FAB005/calendar--v1.png" alt="calendar--v1" /></a>
+                    <p class="font-medium text-black">Date</p>
+                  </div>
+                  <div>
+                    <div class="relative" id="timepicker-inline-12" data-te-input-wrapper-init>
+                      <input type="text" class="peer-focus:text-primary dark:peer-focus:text-primary peer block h-10 w-full rounded-r-lg border-0 bg-white px-3 py-[0.32rem] leading-[1.6] text-black outline-none transition-all duration-200 ease-linear placeholder:text-gray-700 focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0" id="form2" />
+                      <label for="form2" class="peer-focus:text-primary dark:peer-focus:text-primary pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] font-medium leading-[1.6] text-black transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none">Select a time</label>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <a href="#"><button class="mt-4 flex h-10 w-28 items-center justify-center rounded-lg bg-gradient-to-r from-yellow-500 to-amber-200 font-medium text-black md:mt-0 md:w-28">Search</button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex h-full items-center justify-center">
+              <div class="relative w-48 rounded-lg p-4 text-white">
+                <div class="items-left flex flex-col font-medium">
+                  <div class="mb-4 flex items-center">
+                    <input id="default-checkbox" type="checkbox" value="" class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                    <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Afforable</label>
+                  </div>
+                  <div class="mb-4 flex items-center">
+                    <input id="default-checkbox" type="checkbox" value="" class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                    <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">High Rating</label>
+                  </div>
+                  <div class="mb-4 flex items-center">
+                    <input id="default-checkbox" type="checkbox" value="" class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                    <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Near By</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex h-full items-center justify-center">
+              <div class="relative w-48 rounded-lg p-4 text-white">
+                <div class="items-left flex flex-col font-medium">
+                  <div class="mb-4 flex items-center">
+                    <input id="default-checkbox" type="checkbox" value="" class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                    <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Available</label>
+                  </div>
+                  <div class="mb-4 flex items-center">
+                    <input id="default-checkbox" type="checkbox" value="" class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                    <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fast</label>
+                  </div>
+                  <div class="mb-4 flex items-center">
+                    <input id="default-checkbox" type="checkbox" value="" class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                    <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- Post -->
+      <div class=" mb-10 ml-10 mt-32 h-fit w-fit bg-gray-500 bg-opacity-80 py-5 pr-5 text-white">
+        <div class="ml-8 flex py-5">
+          <span class="w-2 bg-yellow-400"></span>
+          <p class="w-40 bg-gray-600 pl-5 text-sm">Taxi and bus services</p>
+        </div>
+        <p class="ml-8 text-5xl font-medium">Your Gateway</p>
+        <p class="ml-8 text-5xl font-medium">to any Destination</p>
+        <p class="ml-8 mr-5 mt-5 text-sm">
+          Transportation is a vital aspect of modern society, facilitating the<br />
+          movement of people from one place to another.
+        </p>
+        <button class="relative mb-8 ml-8 mt-5 flex h-12 w-40 items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-yellow-500 to-amber-200 text-sm font-medium text-black shadow-lg shadow-slate-500">
+          <a href="#">Explore More</a>
+          <div class="absolute right-0 mt-12 h-20 w-20 translate-x-1/2 transform rounded-full bg-white"></div>
+        </button>
+      </div>
+
+      <div class="relative bg-white pb-6 pl-10 pt-2">
+        <div class="mt-10 flex">
+          <span class="w-2 bg-yellow-400"></span>
+          <p class="w-24 bg-gray-300 pl-5 text-xs">What we do</p>
+        </div>
+        <div class="text-2xl font-medium">
+          <p>Transportation</p>
+          <p>and Service</p>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="flex h-96 w-full items-center justify-center">
+          <img src="https://www.worldhistory.org/img/c/p/1600x900/11887.jpg" class="h-full w-full object-cover object-top" alt="Full-width Image" />
+        </div>
+
+        <div class=" inset-0 flex items-center justify-center bg-white">
+          <div class="mx-auto flex max-w-screen-xl">
+            <div class="-mt-40 flex h-fit w-fit flex-1 items-center bg-white pr-5 text-black">
+              <div>
+                <div class="ml-8 flex py-5">
+                  <span class="w-2 bg-yellow-400"></span>
+                  <p class="w-fit bg-gray-300 px-5 text-sm">Why Us</p>
+                </div>
+                <p class="ml-8 text-2xl font-medium">We really consider your</p>
+                <p class="ml-8 text-2xl font-medium">travelling</p>
+                <p class="ml-8 mr-5 mt-5 text-xs">
+                  Both taxi and bus services contribute to the overall<br />
+                  transportation infrastructure, offering solutions for different <br />
+                  travel needs and preferences.
+                </p>
+                <p class="ml-8 mr-5 mt-5 text-xs">
+                  Taxis provide a more personalized and on-demand service,<br />
+                  while buses offer a systematic and mass transit solution for<br />
+                  larger groups of people.
+                </p>
+                <button id="searchBook" class="relative mb-8 ml-8 mt-5 flex h-12 w-40 items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-yellow-500 to-amber-200 text-sm font-medium text-black shadow-lg shadow-slate-500 hover:border-2 hover:border-gray-950">
+                  <a href="#">Booking Now</a>
+                  <div class="absolute right-0 mt-12 h-20 w-20 translate-x-1/2 transform rounded-full bg-yellow-500"></div>
+                </button>
+              </div>
+              <div class="mt-5 flex flex-col">
+                <img src="https://easycdn.blob.core.windows.net/profile-img/mekong-ekspress01.jpg " class="ml-12 mr-5 w-60" />
+                <img src="https://ak-d.tripcdn.com/images/0351q1200094d3lyp39C4_C_568_320_Q50.jpg_.webp" class="-mt-14 w-44 border-4 border-white" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative bg-white pt-2">
+          <div class="text-center text-2xl font-medium">
+            <p>Transportating Across The City</p>
+          </div>
+
+          <div class="mx-2 mt-10 flex max-w-full items-center space-x-2 overflow-x-auto bg-white pb-10">
+            <div class="relative flex-shrink-0">
+              <img src="https://lostplate.com/wp-content/uploads/2020/07/24-hours-in-phnom-penh-independence-monument.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Phnom Penh</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://pppenglish.sgp1.digitaloceanspaces.com/image/main/field/image/img_6722.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Kampong Chhnang</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://live.staticflickr.com/8691/16995702166_ab7e89c9d0_z.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Pursat</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/a9/33/0d/the-namesake-of-the-city.jpg?w=1200&h=-1&s=1" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Battambong</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://memoriapalace.com/wp-content/uploads/2016/08/Phnom-Yat.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Pailin</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://www.dinewiththelocals.com/wp-content/uploads/2019/10/IMG_20191020_085059.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Banteay Meanchey</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://tourismcambodia.org/storage/uploads/category_banner/ministry-of-tourism-cambodia-2019-02-18-07-39-42am-Oddar-Meanchey-01.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Oddar Meanchey</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/D%27Angkor.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Siem Reap</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://www.khmertimeskh.com/wp-content/uploads/2019/01/3-1-kampong_thom_0.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Kampong Thom</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://www.greeneratravel.com/userfiles/850preahvihear.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Preah Vihear</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://www.guidetrip.info/asset/img/gallery_album/5b28ce30b7e68.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Stung Treng</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://d13jio720g7qcs.cloudfront.net/images/destinations/origin/56189a46d5846.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Kratie</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://www.khmertimeskh.com/wp-content/uploads/2022/11/48698.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Tboung Khmum</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://www.travelauthenticasia.com/photos/tours/cambodia/gallery/kampong_cham/kampong_cham_6.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Kampong cham</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://scontent.fpnh4-1.fna.fbcdn.net/v/t1.6435-9/41045760_464082490735404_1050529020413739008_n.jpg?stp=cp0_dst-jpg_e15_p403x403_q65&_nc_cat=100&ccb=1-7&_nc_sid=947906&_nc_ohc=6nL1R2vJKRAAX_Fq40d&_nc_ht=scontent.fpnh4-1.fna&oh=00_AfCa0yFJzWYhD8UfchdclUp5QfIoajLC56V2Y6HJCOup2g&oe=65CEFD68" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Prey Veng</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://www.travelauthenticasia.com/photos/tours/cambodia/gallery/kandal/krong-ta-khmau-1.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Kandal</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://static.information.gov.kh/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBKzc5QkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--efed795ea20b2e66de4287ede8ddb4351e5a31a3/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lOTVRNMU1IZzVNREFHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--30b79c7f7567bd0a04d6c485cf8a2bbc24e21d2f/IMG_0086.jpeg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Kampong Speu</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://www.khmerplaces.com/storage/provinces/September2020/doBwrCTTiseg3SMpUbsk.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Koh Kong</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://travelcdns.cambodia-travel.com/1663828081115.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Kampot</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://lostplate.com/wp-content/uploads/2020/07/24-hours-in-phnom-penh-independence-monument.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Kep</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://www.globaltimes.cn/Portals/0/attachment/2022/2022-04-17/b902e704-9931-4b98-a69b-81cb3cf011e0.jpeg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Preah Sihanouk</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Sangkat_Svay_Rieng%2C_Krong_Svay_Rieng%2C_Cambodia_-_panoramio.jpg/640px-Sangkat_Svay_Rieng%2C_Krong_Svay_Rieng%2C_Cambodia_-_panoramio.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Svay Rieng</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://www.ppmlgroup.com/wp-content/uploads/2022/02/takeo-icon_orig.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Takeo</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://www.gdtp.gov.kh/wp-content/uploads/2021/01/mondulkiri-province-1024x751.jpg" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Mondulkiri</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex-shrink-0">
+              <img src="https://lh3.googleusercontent.com/proxy/4XIwQJkP_MvyTlnGYqMJDTSniwazmTsnz4DGm6PLleqmlF7a93FMLqA-9tRtYONnRe1yLGZaodClg6Smu_AErkPV10GNc1SG" class="h-60 w-48 object-cover" />
+              <div class="absolute bottom-0 h-24 w-48 bg-gradient-to-t from-slate-950 to-transparent pl-5 pt-12">
+                <p class="font-medium text-white">Rattanakkiri</p>
+                <div class="flex space-x-2">
+                  <p class="text-xs text-yellow-300">popular and fantasy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="-mt-36 flex w-full items-center justify-center bg-gradient-to-t from-yellow-500 to-amber-50">
+            <a href="#">
+              <button class="relative mb-8 mt-44 flex h-12 w-40 items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-sky-800 to-sky-400 text-sm font-medium text-white shadow-lg shadow-slate-500 hover:border-2 hover:border-yellow-400">
+                See More
+                <div class="absolute right-0 mt-12 h-14 w-14 translate-x-1/2 transform rounded-full bg-blue-800"></div>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex h-full items-center justify-center bg-white p-10">
+          <div>
+            <div class=" md:max-w-fixed flex flex-col items-center rounded-lg border border-gray-200 bg-white drop-shadow-lg md:flex-row dark:bg-white">
+              <div>
+                <img class="h-full w-full rounded-t-lg object-cover md:h-auto md:w-96 md:rounded-none md:rounded-s-lg" src="https://vietfuntravel.com/image/cache/data/open%20bus/thaco%2035c-max-500.jpg" alt="" />
+                <div class="ml-10 flex w-96 flex-col justify-start text-left">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Bus service</h5>
+                  <p class="mb-3 font-medium text-gray-700 dark:text-black">
+                    Bus Service: Bus services are a form<br />
+                    of public transportation that <br />
+                    operates up and dropping off<br />
+                    passengers at designated stops.
+                  </p>
+                  <a href="busService.html"><button class="mb-10 mt-5 h-10 w-28 rounded-3xl border-2 border-black text-sm font-medium hover:bg-amber-200">Find Now</button></a>
+                </div>
+              </div>
+              <div>
+                <div class="flex items-center justify-center">
+                  <img class="h-full w-full rounded-t-lg md:mt-12 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="https://media.chromedata.com/MediaGallery/media/MjkzOTU4Xk1lZGlhIEdhbGxlcnk/mBFi9OSLIrO47px0j7F3GsTl6w69F50xp-wusXYp7k12QghR05TechyqcaK3G60Nz_n6CUtwID0S8kCCeS3AjM-ggHO_VEGSKBssGCJI5smUEE7b8SVNHiByp6_eQSbBhhM7P6v56SdA8Fa6Mdgbm6L9wiPoHNanEvLIPBU82I-D0KNfPHYyPAjhQCLoKyGc/cc_2024TOV110007_01_640_1J9.png" />
+                </div>
+                <div class="ml-10 flex w-96 flex-col justify-start text-left">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Taxi service</h5>
+                  <p class="mb-3 font-medium text-gray-700 dark:text-black">
+                    Taxi Service: A taxi service is a<br />
+                    convenient and flexible mode of<br />
+                    transportation where individuals can<br />
+                    hire a private vehicle for personal travel.
+                  </p>
+                  <a href="taxiService.html"><button class="mb-10 mt-5 h-10 w-28 rounded-3xl border-2 border-black text-sm font-medium hover:bg-amber-200">Find Now</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center bg-white">
+          <div class="grid grid-cols-2 p-10">
+            <div class="mx-auto flex items-center border-b-2 border-r-2 border-t-2 p-5">
+              <p class="mr-5 text-4xl font-medium">1294</p>
+              <span class="h-5 w-5 bg-yellow-400"></span>
+              <p class="w-fit px-5 text-sm font-medium">Member of Taxi</p>
+            </div>
+            <div class="mx-auto -ml-2 flex items-center border-b-2 border-t-2 p-5 pl-10">
+              <p class="mr-5 text-4xl font-medium">3594</p>
+              <span class="h-5 w-5 bg-yellow-400"></span>
+              <p class="w-fit px-5 text-sm font-medium">Member of Bus</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center bg-white pt-5">
+          <span class="w-2 bg-yellow-400"></span>
+          <p class="w-fit bg-gray-300 px-5 text-sm font-medium">The Transporters</p>
+        </div>
+        <div class="bg-white p-5">
+          <div class="text-center text-4xl font-medium">
+            <p>Our Drivers</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative bg-white pt-2">
+        <div class="text-center text-2xl font-medium">
+          <p>Transportating Across The City</p>
+        </div>
+
+        <div class="mx-auto mt-10 pl-96 pr-2 flex md:pl-48 md:pr-4 flex-row items-center justify-center space-x-4 space-y-4 overflow-scroll bg-white pb-10 md:flex-row md:space-x-20 md:space-y-0">
+          <div class="relative flex-shrink-0">
+            <img src="https://www.shutterstock.com/image-photo/paris-france-june-16-2023-600nw-2318800323.jpg" class="h-80 w-52 object-cover" />
+            <div class="absolute bottom-0 flex h-20 w-full flex-col justify-center bg-slate-800 pl-2 pt-2 text-left">
+              <div class="flex">
+                <div class="flex">
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                </div>
+                <div class="-mt-9 ml-auto flex h-8 items-center justify-center space-x-1 bg-amber-300 p-1">
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="facebook-new" /></a>
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a>
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/material-outlined/24/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                </div>
+              </div>
+              <p class="ml-2 font-medium text-white">Elon Musk</p>
+              <div class="ml-2 flex space-x-6 align-middle">
+                <p class="text-sm text-white">Taxi driver</p>
+                <p class="pl-5 text-sm text-white">099 999 9999</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative flex-shrink-0">
+            <img src="https://www.shutterstock.com/image-photo/paris-france-june-16-2023-600nw-2318800323.jpg" class="h-80 w-52 object-cover" />
+            <div class="absolute bottom-0 flex h-20 w-full flex-col justify-center bg-slate-800 pl-2 pt-2 text-left">
+              <div class="flex">
+                <div class="flex">
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                </div>
+                <div class="-mt-9 ml-auto flex h-8 items-center justify-center space-x-1 bg-amber-300 p-1">
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="facebook-new" /></a>
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a>
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/material-outlined/24/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                </div>
+              </div>
+              <p class="ml-2 font-medium text-white">Elon Musk</p>
+              <div class="ml-2 flex space-x-6 align-middle">
+                <p class="text-sm text-white">Taxi driver</p>
+                <p class="pl-5 text-sm text-white">099 999 9999</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative flex-shrink-0">
+            <img src="https://www.shutterstock.com/image-photo/paris-france-june-16-2023-600nw-2318800323.jpg" class="h-80 w-52 object-cover" />
+            <div class="absolute bottom-0 flex h-20 w-full flex-col justify-center bg-slate-800 pl-2 pt-2 text-left">
+              <div class="flex">
+                <div class="flex">
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                </div>
+                <div class="-mt-9 ml-auto flex h-8 items-center justify-center space-x-1 bg-amber-300 p-1">
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="facebook-new" /></a>
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a>
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/material-outlined/24/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                </div>
+              </div>
+              <p class="ml-2 font-medium text-white">Elon Musk</p>
+              <div class="ml-2 flex space-x-6 align-middle">
+                <p class="text-sm text-white">Taxi driver</p>
+                <p class="pl-5 text-sm text-white">099 999 9999</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative flex-shrink-0">
+            <img src="https://www.shutterstock.com/image-photo/paris-france-june-16-2023-600nw-2318800323.jpg" class="h-80 w-52 object-cover" />
+            <div class="absolute bottom-0 flex h-20 w-full flex-col justify-center bg-slate-800 pl-2 pt-2 text-left">
+              <div class="flex">
+                <div class="flex">
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                </div>
+                <div class="-mt-9 ml-auto flex h-8 items-center justify-center space-x-1 bg-amber-300 p-1">
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="facebook-new" /></a>
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a>
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/material-outlined/24/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                </div>
+              </div>
+              <p class="ml-2 font-medium text-white">Elon Musk</p>
+              <div class="ml-2 flex space-x-6 align-middle">
+                <p class="text-sm text-white">Taxi driver</p>
+                <p class="pl-5 text-sm text-white">099 999 9999</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative flex-shrink-0">
+            <img src="https://www.shutterstock.com/image-photo/paris-france-june-16-2023-600nw-2318800323.jpg" class="h-80 w-52 object-cover" />
+            <div class="absolute bottom-0 flex h-20 w-full flex-col justify-center bg-slate-800 pl-2 pt-2 text-left">
+              <div class="flex">
+                <div class="flex">
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                </div>
+                <div class="-mt-9 ml-auto flex h-8 items-center justify-center space-x-1 bg-amber-300 p-1">
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="facebook-new" /></a>
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a>
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/material-outlined/24/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                </div>
+              </div>
+              <p class="ml-2 font-medium text-white">Elon Musk</p>
+              <div class="ml-2 flex space-x-6 align-middle">
+                <p class="text-sm text-white">Taxi driver</p>
+                <p class="pl-5 text-sm text-white">099 999 9999</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative flex-shrink-0">
+            <img src="https://www.shutterstock.com/image-photo/paris-france-june-16-2023-600nw-2318800323.jpg" class="h-80 w-52 object-cover" />
+            <div class="absolute bottom-0 flex h-20 w-full flex-col justify-center bg-slate-800 pl-2 pt-2 text-left">
+              <div class="flex">
+                <div class="flex">
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/filled-star--v1.png" alt="filled-star--v1" class="-mt-5 h-5 w-5" />
+                </div>
+                <div class="-mt-9 ml-auto flex h-8 items-center justify-center space-x-1 bg-amber-300 p-1">
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="facebook-new" /></a>
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a>
+                  <a href="#"><img width="20" height="20" src="https://img.icons8.com/material-outlined/24/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                </div>
+              </div>
+              <p class="ml-2 font-medium text-white">Elon Musk</p>
+              <div class="ml-2 flex space-x-6 align-middle">
+                <p class="text-sm text-white">Taxi driver</p>
+                <p class="pl-5 text-sm text-white">099 999 9999</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      <div class="relative">
+        <div class="h-20 w-full bg-sky-950"></div>
+        <div class="relative bg-sky-800">
+          <div class="mx-auto flex flex-col justify-center space-y-4 p-4 md:flex-row md:space-x-20 md:space-y-0">
+            <div class="relative -mt-24 rounded-lg bg-sky-900 text-white">
+              <div class="my-2 flex h-20 items-center justify-center">
+                <p class="text-4xl font-bold">TaxiBus Service</p>
+              </div>
+
+              <div class="m-4 pb-12">
+                <div>
+                  <p>
+                    Laverage agile framworks to provide a <br />
+                    robust synopsis for strategy collaborative <br />
+                    thinking for further the overall value <br />
+                    proposition.
+                  </p>
+                </div>
+                <div class="my-2 flex">
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/circled-envelope.png" alt="circled-envelope" />
+                  <div class="ml-2">
+                    <p class="font-bold">Email</p>
+                    <p>TaxiBus777@gmial.com</p>
+                  </div>
+                </div>
+                <div class="my-2 flex">
+                  <img width="48" height="48" src="https://img.icons8.com/ios-filled/50/228BE6/apple-phone.png" alt="apple-phone" />
+                  <div class="ml-2">
+                    <p class="font-bold">Call Us</p>
+                    <p>010 23 1010 / 079 643 5050</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center">
+              <div class="flex h-full items-center justify-center">
+                <div class="relative w-48 rounded-lg bg-sky-800 p-4 text-white">
+                  <div class="items-left flex flex-col space-y-4 font-medium">
+                    <p><a href="#" class="hover:border-b-2">About Us</a></p>
+                    <p><a href="#" class="hover:border-b-2">Our Team</a></p>
+                    <p><a href="#" class="hover:border-b-2">Our Project</a></p>
+                    <p><a href="#" class="hover:border-b-2">Pricing</a></p>
+                    <p><a href="#" class="hover:border-b-2">Contact</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex h-full items-center justify-center">
+                <div class="relative w-48 rounded-lg bg-sky-800 p-4 text-white">
+                  <div class="items-left flex flex-col space-y-4 font-medium">
+                    <p><a href="#" class="hover:border-b-2">Style Guide</a></p>
+                    <p><a href="#" class="hover:border-b-2">Changelog</a></p>
+                    <p><a href="#" class="hover:border-b-2">License</a></p>
+                    <p><a href="#" class="hover:border-b-2">Protected</a></p>
+                    <p><a href="#" class="hover:border-b-2">Not Found</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
